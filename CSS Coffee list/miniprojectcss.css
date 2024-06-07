@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3rem;
+}
+nav{
+    line-height: 7rem;
+    font-size: 3rem;
+}
+nav ul {
+    border: 1px solid #333;
+    border-radius: 3rem
+}
+li a{
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+h1{
+    background-color: gold;
+    border-radius: 3rem 3rem 0 0;
+}
+li a:hover{
+    background-color: #333;
+    color: aliceblue;
+}
+li:last-child a{
+    border-radius: 0 0 3rem 3rem;
+}
+li{
+    list-style: none
+}
