@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inline{
+    background-color: #333;
+    padding: 1rem;
+    text-align: right;
+}
+.inline li {
+    display: inline-block;
+}
+.inline li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-inline: 1rem;
+}
+.inline li a:hover{
+    color: lawngreen;
+}
+.block{
+    list-style-type: none;
+    text-align: center;
+    display: block;
+    border: 1px solid #333;
+}
+.block li{
+    background-color: #333;
+}
+.block li a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+        padding: 1rem;
+
+}
+.block li a:hover{
+    background-color: aliceblue;
+    color: #333;
+}
