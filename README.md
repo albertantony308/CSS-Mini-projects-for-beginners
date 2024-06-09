@@ -21,7 +21,7 @@ Each folder in this repository contains HTML and CSS files demonstrating a speci
 - **Combine Techniques:** Try combining different techniques from various examples to build more complex layouts.
 - **Challenge Yourself:** After studying an example, try to recreate it from scratch without looking at the code.
 
-  ## Resources 📖
+## Resources 📖
 Here are some great resources to further enhance your CSS knowledge:
 
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
