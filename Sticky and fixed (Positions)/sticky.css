@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;;
+}
+#red{
+    background-color: orangered;
+    position: sticky;
+    top: 0;
+}
+section {
+    height: 50rem;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#green{
+    background-color: green;
+    position: sticky;
+    top: 0;
+}
+#blue{
+    background-color: blue;
+    position: sticky;
+    top: 0;
+}
+.rocket{
+    padding: 1rem;
+    position: fixed;
+    top: 15rem;
+    left: 0;
+    background-color: #4444ff
+}
+footer{
+    background-color: #333;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    word-spacing: 1rem;
+
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+}
+footer a:hover{
+    color: orangered;
+}
