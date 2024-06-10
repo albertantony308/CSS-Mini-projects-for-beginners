@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    background-color: black;
+    color: #fff;
+    padding: 50px;
+    font-size: 2rem;
+    
+}
+.container{
+    display: flex;
+    max-width: 1000px;
+    min-height: 400px;
+    gap: 1rem;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 150px;
+    align-content: flex-start;
+}
+p:nth-child(2)
+{
+    order: 1;
+    flex: 1 1 250px;
+    
+}
