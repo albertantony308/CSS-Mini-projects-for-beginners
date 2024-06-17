@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header,nav,main,footer{
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: 100%;
+    text-align: center;
+    place-content: center;
+
+}
+body{
+    font-family: pt sans;
+    background-color: aquamarine;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(orangered,#123);
+}
+header{
+    background-color: aliceblue;
+    top: 0;
+}
+footer{
+    position: sticky;
+    background-color: aquamarine;
+    bottom: 0;
+}
+main{
+    flex-grow: 1;
+}
+nav{
+    background-color: darkturquoise;
+
+}
+/*Small*/
+@media screen and (min-width: 576px)
+{
+    body{
+        background-color: orangered;
+        background-image: linear-gradient(blue,orangered);
+    }
+    nav{
+        display: none;
+    }
+}
+/*Large*/
+@media screen and (min-width: 768px)
+{
+    body{
+        background-color: green;
+        background-image: linear-gradient(white,green);
+    }
+}
+/*XL*/
+@media screen and (min-width: 992px)
+{
+    body{
+        background-color: green;
+        background-image: linear-gradient(#3333,green);
+    }
+    nav{
+        display: none;
+    }
+}
+/*Mobile Landscape*/
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4)
+{
+    body{
+        background-color: burlywood;
+        background-image: linear-gradient(burlywood,green);
+    }
+    nav{
+        display: none;
+    }
+}
