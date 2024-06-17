@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.profile-container{
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 2rem;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column
+}
+.profile-container img{
+    border-radius: 50%;
+    height: auto;
+    min-width: 100px;
+    padding: -100pz;
+}
+.nowrap{
+    line-break:auto;
+    word-wrap: wrap;
+    white-space:nowrap;
+}
+h1{
+    font-family: poppins;
+    font-size: 2rem;
+    padding-top: 1rem
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clip{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: poppins;
+    font-size: 10rem;
+    background: url(./img/misty-carpathian-mountain-landscape-with-fir-forest-tops-trees-sticking-out-fog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(000,000,000,0.1);
+    text-align: center;
+    background-position-y: bottom;
+}
