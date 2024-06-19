@@ -1,0 +1,34 @@
+:root{
+    --FS:4rem;
+    --FF:Poppins;
+    --PADDING:1rem;
+    --DARKBG: #333;
+    --LIGHTBG:aliceblue;
+}
+body{
+    background-color: var(--DARKBG);
+    color: var(--LIGHTBG);
+    font-family: var(--FF);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.palmtop{
+    --LIGHTBG:turquoise;
+}
+main .laptop{
+    background-color: var(--LIGHTBG);
+    padding: var(--PADDING);
+    display: flex;
+    font-size: var(--FS);
+}
+
+@media (prefers-color-scheme:dark)
+{
+    :root{
+        --LIGHTBG:black;
+    }
+}
