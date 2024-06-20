@@ -1,0 +1,10 @@
+.lorem:hover::after{
+    content: attr(data-toolkit);
+    position: absolute;
+    left: 0.4rem;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 15%;
+    padding: 5px;
+    top: 4.7rem
+}
