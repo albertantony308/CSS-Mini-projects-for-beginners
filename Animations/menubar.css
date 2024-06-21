@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-title-line {
+    background-color: #333;
+    color: white;
+    font-family: poppins;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+header .header-title-line .menu-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    align-items: center;
+    position: relative;
+}
+header {
+    background-color: #333;
+    color: white;
+}
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+    background-color: white;
+    height: 5px;
+    width: 40px;
+    position: absolute;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+}
+.menu-icon::before {
+    transform: translate(-20px, -10px);
+    width: 100%;
+}
+.menu-icon::after {
+    transform: translate(-20px, 10px);
+    width: 100%;
+}
+:is(header:hover, header:focus-within) .menu-icon {
+    background-color: transparent;
+}
+:is(header:hover, header:focus-within) .menu-icon::before {
+    transform: translate(-20px, 1px) rotate(45deg);
+}
+:is(header:hover, header:focus-within) .menu-icon::after{
+    transform: translate(-20px,1px) rotate(-45deg);
+}
+:is(header:hover, header:focus-within) nav{
+    display: flex;
+}
+
+nav {
+    display: none;
+    justify-content: center;
+    transform-origin: top center;
+    background-color: #333;
+    animation: showMenu 0.5s ease-in-out forwards;
+}
+@keyframes showMenu {
+    0% {
+        transform: scaleY(0);
+    }
+    50% {
+        transform: scaleY(1.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-flow: column nowrap;
+}
+nav a {
+    font-family: Verdana;
+    text-align: center;
+    display: block;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+nav a:any-link{
+    color: white;
+}
+nav li {
+        border: 1px solid white;
+    padding: 1rem;
+
+}
+nav a:hover, nav a:focus {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+nav a:any-link{
+    text-decoration: none;
+}
