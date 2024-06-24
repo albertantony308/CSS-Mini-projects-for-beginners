@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Albert Antony">
+        <meta name="description" content="This is a website of the official pepper bay restaurant. Here you can see the details about the restaurant, the food we prepare, and the ways to reah us safe and sound.">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Restaurant Reservation</title>
+    </head>
+    <body>
+    <header>
+        <section class="pepper-bay-logo">
+            <a href="index.html">
+        <img src="img/pikaso_texttoimage_a-logo-for-a-restaurant-named-pepper-bay-with-a-ph.png" height="100" width="100"></a>
+        </section>
+                </header>
+            <nav>
+        <ul>
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="hours.html">Hours &amp; Location</a></li>
+            <li><a href="private-dining.html">Private Dining</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+        </nav>
+        <main>
+        <section class="employee-importance-column">
+            <h1>Reserve Your Table</h1><br>
+             <form method="post">
+                    <section class="input-text">
+                <input type="text" placeholder="Enter Your Name" name="fullname" class="textbox"><br>
+                <input type="tel" name="phone" placeholder="Phone Number" class="textbox" required>
+                 </section><br><br>
+                  <label for="date-of-booking">Enter the date of booking :</label>
+                 <input type="date" id="date-of-booking" class="numbox"><br><br>
+                 
+                  <label for="date-of-booking">Enter the Mealtime </label>
+                 <select class="mealtime">
+                 <option name="breakfast">Breakfast</option>
+                     <option name="lunch">Lunch</option>
+                     <option name="dinner">Dinner</option>
+                 </select><br><br>
+                    <label for="count">Enter Total Number Of Members</label>
+                <input type="number" id="count" min=1 max="6" class="numbox">
+                    <br><br>
+                    <a href="#" class="web-btn payment-button">Reserve Your Table</a><br><br><br>
+                </form>
+        <i>Reserving a table does not require any payment but if the customer has not arrived even after 30 minutes of the time given, the reservation will get cancelled</i>
+            </section>
+        </main>
+    </body>
+</html>
