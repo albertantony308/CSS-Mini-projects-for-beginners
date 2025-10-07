@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Maniac</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #0a0f1c, #101e33);
+      color: white;
+    }
+
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Soccer_stadium_background.jpg') center/cover no-repeat;
+      color: #00ff88;
+      text-align: center;
+      padding: 60px 0;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+      box-shadow: inset 0 -5px 20px rgba(0,0,0,0.6);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/8/8a/Football_pitch_background.jpg') center/cover no-repeat;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 20px 0;
+      font-weight: 600;
+      font-size: 1.1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ff88;
+      transform: scale(1.1);
+    }
+
+    .section {
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    .players {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .player-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .player-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 255, 136, 0.3);
+    }
+
+    .player-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .player-card h3 {
+      margin: 15px 0 5px;
+      color: #00ff88;
+    }
+
+    /* New button style */
+    .know-more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(90deg, #00ff88, #00bfff);
+      color: #0a0f1c;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .know-more-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+    }
+
+    .legacy {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Football_stadium_lights.jpg') center/cover no-repeat;
+      background-color: rgba(0,0,0,0.7);
+      background-blend-mode: multiply;
+      padding: 80px 10%;
+      text-align: left;
+      border-top: 3px solid #00ff88;
+      border-bottom: 3px solid #00bfff;
+    }
+
+    .legacy h2 {
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8em;
+      color: #00ff88;
+      margin-bottom: 30px;
+    }
+
+    .legacy p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      color: #e0e0e0;
+    }
+
+    .fun-facts {
+      background: linear-gradient(135deg, #002b45, #003c60);
+      padding: 80px 10%;
+      border-top: 3px solid #00bfff;
+      border-bottom: 3px solid #00ff88;
+      text-align: left;
+    }
+
+    .fun-facts h2 {
+      text-align: center;
+      color: #00ffcc;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .fun-facts li {
+      margin: 20px 0;
+      font-size: 1.1em;
+      line-height: 1.8;
+      background: rgba(255,255,255,0.05);
+      padding: 15px 20px;
+      border-left: 4px solid #00ffcc;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.9em;
+      background-color: #0a0f1c;
+      color: #aaa;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Football Maniac</header>
+
+  <nav>
+    <a href="#players">Famous Players</a>
+    <a href="playfootball.html">Play Football</a>
+    <a href="#legacy">World Cup Legacy</a>
+    <a href="#fun-facts">Fun Football Facts</a>
+  </nav>
+
+  <section id="players" class="section">
+    <h2>Famous Football Players</h2>
+    <div class="players">
+      <div class="player-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+        <h3>Cristiano Ronaldo</h3>
+        <p>5x Ballon d'Or winner, UEFA Euro Champion 2016, Top scorer in UEFA Champions League history.</p>
+      </div>
+      <div class="player-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg" alt="Lionel Messi">
+        <h3>Lionel Messi</h3>
+        <p>8x Ballon d'Or winner, 2022 FIFA World Cup Champion, All-time top scorer for Barcelona and Argentina.</p>
+      </div>
+      <div class="player-card">
+        <img src="pele.png" alt="Pele">
+        <h3>Pele</h3>
+        <p>Three-time FIFA World Cup Winner (1958, 1962, 1970), Brazil's national hero, widely regarded as one of the greatest footballers of all time.</p>
+        <a href="pele-halloffame.html" class="know-more-btn">Know More</a>
+      </div>
+      <div class="player-card">
+        <img src="Diego Maradona.png" alt="Diego Maradona">
+        <h3>Diego Maradona</h3>
+        <p>1986 FIFA World Cup Winner with Argentina, famous for 'Hand of God' goal and mesmerizing dribbling skills, football legend.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="legacy" class="legacy">
+    <h2>The World Cup Legacy</h2>
+    <p>The FIFA World Cup stands as the greatest sporting spectacle on Earth — a month-long festival where nations unite and legends are born. From Pele’s mesmerizing performances to Maradona’s unforgettable ‘Hand of God’, each tournament adds a new page to football’s sacred history.</p>
+    <p>The 2018 World Cup in Russia saw France’s golden generation claim the title, with Kylian Mbappé emerging as a teenage superstar. In 2022, Lionel Messi fulfilled his lifelong dream, leading Argentina to glory in a final that’s already considered one of the greatest in history.</p>
+    <p>Over the decades, the tournament has evolved — bringing technology, fair play, and new nations into the spotlight. The legacy of every World Cup lives in the streets, stadiums, and songs of millions of fans who breathe the game. As we look toward 2026, the anticipation builds for a new generation of heroes.</p>
+  </section>
+
+  <section id="fun-facts" class="fun-facts">
+    <h2>⚽ Fun Football Facts</h2>
+    <ul>
+      <li>Did you know that the fastest goal ever scored in a football match was just 2.4 seconds after kick-off?</li>
+      <li>The World Cup trophy cannot be won outright — winners only get a replica to keep, while the original stays with FIFA.</li>
+      <li>Goalkeepers wear different colored jerseys so that referees can easily identify them on the field.</li>
+      <li>The 2018 World Cup in Russia used the first-ever chip-embedded football to track speed and movement during games.</li>
+      <li>The longest football match ever lasted 3 days — a charity event that played for over 108 hours!</li>
+      <li>Only eight nations have ever won the FIFA World Cup since it began in 1930.</li>
+      <li>Every World Cup since 1966 has used a ball designed specifically for that tournament — each one telling a unique story of design and innovation.</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Football Maniac | Designed for every football lover ⚽
+  </footer>
+
+</body>
+</html>
