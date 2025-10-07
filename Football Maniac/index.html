@@ -87,6 +87,24 @@
       color: #00ff88;
     }
 
+    /* New button style */
+    .know-more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(90deg, #00ff88, #00bfff);
+      color: #0a0f1c;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .know-more-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+    }
+
     .legacy {
       background: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Football_stadium_lights.jpg') center/cover no-repeat;
       background-color: rgba(0,0,0,0.7);
@@ -146,19 +164,16 @@
       border-top: 1px solid #222;
     }
 
-    /* Mobile Nav Column Layout */
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
         align-items: center;
-        position: static; /* not fixed/sticky on mobile */
-        top: auto;
+        position: static;
       }
       nav a {
         margin: 10px 0;
       }
     }
-
   </style>
 </head>
 <body>
@@ -189,6 +204,7 @@
         <img src="pele.png" alt="Pele">
         <h3>Pele</h3>
         <p>Three-time FIFA World Cup Winner (1958, 1962, 1970), Brazil's national hero, widely regarded as one of the greatest footballers of all time.</p>
+        <a href="pele-halloffame.html" class="know-more-btn">Know More</a>
       </div>
       <div class="player-card">
         <img src="Diego Maradona.png" alt="Diego Maradona">
