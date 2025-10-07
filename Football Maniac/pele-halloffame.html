@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pele - Hall of Fame</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #0a0f1c, #101e33);
+      color: white;
+      text-align: center;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.moneycontrol.com/static-mcnews/2022/12/Pele-lifts-world-cup-trophy-for-brazil-in-1958-Twitter-Pele.jpg') center/cover no-repeat;
+      color: #00ff88;
+      background-position: center 30%;
+      padding: 100px 0;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      text-shadow: 3px 3px 15px black;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .content {
+      padding: 50px 10%;
+    }
+
+    .content h2 {
+      color: #00ff88;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .achievements {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .achievements ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .achievements li {
+      margin: 15px 0;
+      padding-left: 20px;
+      border-left: 3px solid #00ff88;
+      line-height: 1.6;
+    }
+
+    /* 🔥 Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    figure {
+      margin: 0;
+      background: rgba(255,255,255,0.03);
+      border-radius: 10px;
+      padding: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    figure:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      font-size: 0.95em;
+      color: #b0eaff;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      background: linear-gradient(90deg, #00ff88, #00bfff);
+      color: #0a0f1c;
+      padding: 10px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <header>Pele - Hall of Fame</header>
+
+  <div class="content">
+    <h2>Legend of the Beautiful Game</h2>
+    <div class="achievements">
+      <h3>🏆 Career Achievements</h3>
+      <ul>
+        <li>🏅 3× FIFA World Cup Winner — 1958, 1962, 1970</li>
+        <li>⚽ Over 1,280 career goals in official matches</li>
+        <li>🥇 FIFA Player of the Century (2000)</li>
+        <li>🎖️ Santos FC’s all-time top scorer</li>
+        <li>🌍 Ambassador for Football and UNICEF</li>
+        <li>🏅 Awarded Brazil’s Gold Medal for Sports Merit</li>
+      </ul>
+    </div>
+
+    <h2>Iconic Moments</h2>
+    <div class="gallery">
+
+      <figure>
+        <img src="peleliftingcup.png" alt="Pele lifting World Cup">
+        <figcaption>Pele lifts the World Cup trophy for Brazil — 1970.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="pelesantos.png" alt="Pele with Santos FC">
+        <figcaption>Playing for Santos FC, where he became a global icon.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="pelecosmos.png" alt="Pele with New York Cosmos">
+        <figcaption>Final chapter of his career with New York Cosmos, USA.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="pelegamer.png" alt="Pele Brazil 1970">
+        <figcaption>The legendary No.10 in Brazil’s golden 1970 squad.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="pelegamer.jpg" alt="Pele game">
+        <figcaption>Pele’s influence extended into global sports culture and media.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="peleballplay.png" alt="Pele playing football">
+        <figcaption>Pure artistry — Pele dribbling and controlling the game.</figcaption>
+      </figure>
+
+    </div>
+
+    <a href="index.html" class="back-btn">← Back to Main Page</a>
+  </div>
+
+</body>
+</html>
